@@ -16,7 +16,7 @@ const movies = [
   'L\'enfant',
   'Wind That Shakes the Barley',
   'Daddy Long Legs',
-  'Princess Monoke',
+  'Princess Mononoke',
   'Howl\'s Moving Castle',
   'Leviathan',
   'From up on Poppy Hill',
