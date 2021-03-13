@@ -11,6 +11,13 @@ h1 {
     color: white;
 }
 
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    opacity: 0.4;
+}
+
 .title {
     font-family: 'Oswald', sans-serif;
 }
@@ -25,4 +32,9 @@ h1 {
     padding-left: 20px;
     font-family: 'Port Lligat Sans', sans-serif;
     display: inline-block;
+}
+
+.rec-quote {
+    margin-top: 0;
+    font-family: 'Port Lligat Sans', sans-serif;
 }
