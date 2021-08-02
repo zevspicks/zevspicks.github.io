@@ -77,7 +77,11 @@ $(document).ready(function() {
 
   $('#title').text(`Zev's pick for ${moment().format('dddd, MMMM Do')}`)
 
-  const rec = recs[moment().dayOfYear() % recs.length]
+  const date = moment()
+  let rec = recs[date.dayOfYear() % recs.length]
+  if(date.month() === 8 && date.date() === 2) {
+    rec = { text: 'Princess Bride', icon: 'fa fa-film', quote: 'Mawage. Mawage is wot bwings us together today. Mawage, that blessed awangement, that dweam wifin a dweam. And wuv, tru wuv, will fowow you foweva. So tweasure your wuv.' }
+  }
   $('#rec-icon').addClass(rec.icon)
   $('#rec-text').text(rec.text)
 
