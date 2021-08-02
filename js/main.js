@@ -80,7 +80,7 @@ $(document).ready(function() {
   const date = moment()
   let rec = recs[date.dayOfYear() % recs.length]
   if(date.month() === 7 && date.date() === 2) {
-    rec = { text: 'Princess Bride', icon: 'fa fa-film', quote: 'Mawage. Mawage is wot bwings us together today. Mawage, that blessed awangement, that dweam wifin a dweam. And wuv, tru wuv, will fowow you foweva. So tweasure your wuv.' }
+    rec = { text: 'The Princess Bride', icon: 'fa fa-film', quote: 'Mawage. Mawage is wot bwings us together today. Mawage, that blessed awangement, that dweam wifin a dweam. And wuv, tru wuv, will fowow you foweva. So tweasure your wuv.' }
   }
   $('#rec-icon').addClass(rec.icon)
   $('#rec-text').text(rec.text)
