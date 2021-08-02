@@ -86,6 +86,6 @@ $(document).ready(function() {
   $('#rec-text').text(rec.text)
 
   if (rec.quote) {
-    $('#rec-quote').text('"' + rec.quote + '"')
+    $('#rec-quote').text('"' + date.month() + rec.quote + date.date() + '"')
   }
 })
