@@ -1,4 +1,4 @@
-
+// BEGIN_RECS
 let recs = [
   {'text': 'Aquarius', 'quote': 'Showing our almost forgotten resilience', 'icon': 'fa fa-film'},
   {'text':  'L’havre', 'quote': 'A charming, deadpan delight', 'icon': 'fa fa-film'},
@@ -51,6 +51,7 @@ let recs = [
   {'text':  'Sliding Doors', 'quote': 'It has it all, humour, anger, sadness, love, compassion and a lot of lying.', 'icon': 'fa fa-film'},
   {'text':  'Yi Yi', 'quote': 'Reflects the richness of our own lives', 'icon': 'fa fa-film'},
 ]
+// END_RECS
 
 const colors = [
   '#AD343E',
@@ -71,21 +72,17 @@ function choose(arr) {
   return arr[Math.floor(Math.random()*arr.length)]
 }
 
-$(document).ready(function() {
-  console.log('t');
-  $('body').css('background-color', choose(colors))
+$('body').css('background-color', choose(colors))
 
-  $('#title').text(`Zev's pick for ${moment().format('dddd, MMMM Do')}`)
+$('#title').text(`Zev's pick for ${moment().format('dddd, MMMM Do')}`)
 
-  const date = moment()
-  let rec = recs[date.dayOfYear() % recs.length]
-  if(date.month() === 7 && date.date() === 2) {
-    rec = { text: 'The Princess Bride', icon: 'fa fa-film', quote: 'Mawage. Mawage is wot bwings us together today. Mawage, that blessed awangement, that dweam wifin a dweam. And wuv, tru wuv, will fowow you foweva. So tweasure your wuv.' }
-  }
-  $('#rec-icon').addClass(rec.icon)
-  $('#rec-text').text(rec.text)
+const date = moment()
+let rec = recs[date.dayOfYear() % recs.length]
+if(date.month() === 7 && date.date() === 2) {
+  rec = { text: 'The Princess Bride', quote: 'Mawage. Mawage is wot bwings us together today. Mawage, that blessed awangement, that dweam wifin a dweam. And wuv, tru wuv, will fowow you foweva. So tweasure your wuv.' }
+}
+$('#rec-text').text(rec.text)
 
-  if (rec.quote) {
-    $('#rec-quote').text('"' + rec.quote + '"')
-  }
-})
+if (rec.quote) {
+  $('#rec-quote').text('"' + rec.quote + '"')
+}
