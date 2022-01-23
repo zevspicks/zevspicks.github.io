@@ -3,18 +3,30 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Zev's Picks</title>
+  <meta name="description" content="All of Zev's Picks">
+  <meta name="author" content="jemonjam.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Zev's Picks">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+
+
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#63a767">
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <link href="https://fonts.googleapis.com/css?family=Oswald:600|Port+Lligat+Sans&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <meta name="apple-mobile-web-app-title" content="Zev's Picks">
+  <meta name="application-name" content="Zev's Picks">
+  <meta name="msapplication-TileColor" content="#00aba9">
 </head>
 
 <body>
@@ -42,5 +54,12 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" charset="utf-8"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cash/6.0.1/cash.min.js" charset="utf-8"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('js/service-worker.js')
+      })
+    }
+  </script>
   <script src="js/main.js" type="text/javascript" charset="utf-8" defer></script>
 </body>

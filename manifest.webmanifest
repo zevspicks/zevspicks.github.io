@@ -1,0 +1,21 @@
+{
+  "name": "Zev's Picks",
+  "short_name": "Zev's Picks",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#63a767",
+  "background_color": "#63a767",
+  "icons": [
+    {
+      "src": "/img/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
