@@ -101,14 +101,15 @@ if (rec.url) {
 }
 
 if (rec.rating) {
-  let i = 1
-  while (i < rec.rating) {
-    $('#rec-rating').children().eq(i).addClass('fa fa-star')
-    i++
+  let star = 0
+  let rating = rec.rating
+  while (rating >= 1) {
+    $('#rec-rating').children().eq(star++).addClass('fa fa-star')
+    rating--
   }
 
-  if (i - rec.rating > 0.001) {
-    $('#rec-rating').children().eq(i).addClass('fa fa-star-half-o')
+  if (rating > 0) {
+    $('#rec-rating').children().eq(star).addClass('fa fa-star-half-o')
   }
 }
 
