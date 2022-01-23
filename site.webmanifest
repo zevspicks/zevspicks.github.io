@@ -8,12 +8,12 @@
   "background_color": "#63a767",
   "icons": [
     {
-      "src": "/img/android-chrome-192x192.png",
+      "src": "/img/android-launchericon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/android-chrome-512x512.png",
+      "src": "/img/android-launchericon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
