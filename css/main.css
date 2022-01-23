@@ -38,3 +38,8 @@ h2 {
     margin-top: 0;
     font-family: 'Port Lligat Sans', sans-serif;
 }
+
+.rec-rating {
+    font-size: 55px;
+    padding-bottom: 20px;
+}
